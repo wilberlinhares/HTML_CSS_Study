@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 564</title>
+  <style>
+    body{
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    label{
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+    <form action="#" method="GET" target="_blank" autocomplete="off">
+      <p>O meu formulário</p>
+      <p>
+        <label for="first-name">Nome:</label>
+        <input 
+          id="first-name" 
+          name="first-name" 
+          type="text" 
+          placeholder="Seu Nome"
+          required
+        >
+      </p>
+      <p>
+        <label for="sou-dev">Sou um dev:</label>
+        <input 
+          id="sou-dev" 
+          value="yes"
+          name="dev" 
+          type="checkbox" 
+        ><br>
+        <label for="sou-dba">Sou DBA:</label>
+        <input 
+          id="sou-dba" 
+          value="yes"
+          name="dba" 
+          type="checkbox" 
+        ><br>
+        <label for="sou-fe">Sou um fe:</label>
+        <input 
+          id="sou-fe" 
+          value="yes"
+          name="fe" 
+          type="checkbox" 
+        >
+        <br>
+      </p>
+      <p>
+        Gênero: <br>
+        <label for="masc">Masculino:</label>
+        <input 
+          id="masc" 
+          name="genero" 
+          value="Masculino"
+          type="radio" 
+        ><br>
+        <label for="fem">Feminino:</label>
+        <input 
+          id="fem" 
+          name="genero" 
+          value="Feminino"
+          type="radio" 
+        ><br>
+        <label for="nao-i">Não Informado</label>
+        <input 
+          id="nao-i" 
+          name="genero" 
+          value="Não Informado"
+          type="radio" 
+        >
+        <br>
+      </p>
+      <p>
+        <label for="first-name">Nascimento:</label>
+        <input 
+          id="nasc" 
+          name="nasc" 
+          type="date" 
+          value="2020-04-20"
+        >
+      <p>
+      </p>
+      <p>
+        <label for="datetime">Data Hora:</label>
+        <input 
+          id="datetime" 
+          name="datetime" 
+          type="datetime-local" 
+        >
+      </p>
+      <p>
+        <label for="time">Hora:</label>
+        <input 
+          id="time" 
+          name="time" 
+          type="time" 
+        >
+      </p>
+      <p>
+        <label for="cor">Cor Preferida:</label>
+        <input 
+          id="cor" 
+          name="cor" 
+          type="color" 
+          value="#FAFAFA"
+        >
+      </p>
+      <p>
+        <label for="cor">Seu e-mail:</label>
+        <input 
+          id="email" 
+          name="email" 
+          type="email" 
+          placeholder="email@email.com"
+          required
+        >
+      </p>
+      <p>
+        <label for="file">Seu currículo:</label>
+        <input 
+          type="file" 
+          id="file" 
+          name="file" 
+          accept=".png,.svg,image/*"
+          multiple
+          >
+      </p>
+      <p>
+        <label for="file">Idade:</label>
+        <input type="number" 
+          id="idade" 
+          name="idade"
+          min="18" max="70"
+          >
+      </p>
+      <p>
+        <label for="meter">Disk Usage C:</label>
+        <meter 
+          id="meter" 
+          value="90" 
+          max="100"
+        >
+        </meter>
+      </p>
+      <p>
+        <label for="password">Password:</label>
+        <input type="password"
+          id="password" 
+          placeholder="Digite sua senha"
+        >
+      </p>
+      <p>
+        <label for="range">Range:</label>
+        <input 
+          type="range"
+          id="range" 
+          name="range"
+          list="tickmarks"
+          min="0"
+          max="10"
+          step="1"
+        >
+        <datalist id="tickmarks">
+            <option value="0" label="0%">
+            <option value="10">
+            <option value="20">
+            <option value="30">
+            <option value="40">
+            <option value="50" label="50%">
+            <option value="60">
+            <option value="70">
+            <option value="80">
+            <option value="90">
+            <option value="100" label="100%">
+          </datalist>
+      </p>
+      <p>
+        <label for="url">URL:</label>
+        <input type="url"
+          id="url" 
+          placeholder="URL"
+        >
+      </p>
+      <p>
+        <label for="search">Search:</label>
+        <input type="search"
+          id="search" 
+          placeholder="Search"
+        >
+      </p>
+      <p>
+        <label for="select">Select:</label>
+        <select id="select">
+          <optgroup label="G1">
+            <option value="Qualquer coisa 1" label="Label 1">
+            <option value="Qualquer coisa 2" label="Label 2">
+            <option value="Qualquer coisa 3" label="Label 3">
+          </optgroup>
+          <optgroup label="G2">
+            <option value="Qualquer coisa 4" label="Label 4">
+            <option value="Qualquer coisa 5" label="Label 5">
+            <option value="Qualquer coisa 6" label="Label 6">
+          </option>
+        </select>
+      </p>
+      <p>
+        <label for="textarea">Text area:</label>
+        <textarea
+          name="textarea"
+          id="textarea"
+          rows="3"
+          cols="20">
+          Conteúdo Previsto       
+        </textarea>
+      </p>
+      <p>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </p>
+    </form>
+</body>
+</html>
